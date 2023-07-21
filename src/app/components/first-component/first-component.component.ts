@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./first-component.component.scss']
 })
 export class FirstComponentComponent {
- name: string = 'Matheus';
- age: number = 30;
- job = 'Programador';
- hobbies = ['Correr', 'Jogar', 'Estudar'];
+ name: string = 'Pentriks';
+ age: number = 20;
+ job = 'Developer';
+ hobbies = ['Run', 'Play', 'Study'];
  car = {
-  name: 'Polo',
+  name: 'i30',
   year: 2019,
  };
 }
