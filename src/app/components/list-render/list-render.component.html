@@ -1,8 +1,10 @@
 <div class="class">
   <h2>Weapons: </h2>
   <ul>
-    <li *ngFor="let gun of weapons">
-      <strong>Name:</strong> {{ gun.name }} <strong>Type:</strong> {{ gun.type }}
+    <li *ngFor="let weapon of weapons">
+      <strong>Name:</strong> {{ weapon.name }} <strong>Type:</strong> {{ weapon.type }}
+      <button (click)="showCaliber(weapon)">Show caliber</button>
     </li>
   </ul>
+  <h3>{{ weaponDetails }}</h3>
 </div>
