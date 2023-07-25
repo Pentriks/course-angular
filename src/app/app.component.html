@@ -1,19 +1,17 @@
 <mat-toolbar color="primary">
   <span>My Application</span>
-  <nav class="class" >
-    <a class="class"  routerLink="/">Home</a>
-    <a class="class"  routerLink="/list">List</a>
-    <a class="class"  routerLink="/directives">Directives</a>
-    <a class="class"  routerLink="/emitter">Emitter</a>
-    <a class="class"  routerLink="/events">Events</a>
-    <a class="class"  routerLink="/if-render">If-render</a>
-    <a class="class"  routerLink="/parent-data">Parent-data</a>
-    <a class="class"  routerLink="/pipes">Pipes</a>
-    <a class="class"  routerLink="/two-way-binding">Two-way-binding</a>
+  <nav>
+    <a class="header"  routerLink="/">Home</a>
+    <a class="header"  routerLink="/list">List</a>
+    <a class="header"  routerLink="/directives">Directives</a>
+    <a class="header"  routerLink="/emitter">Emitter</a>
+    <a class="header"  routerLink="/events">Events</a>
+    <a class="header"  routerLink="/if-render">If-render</a>
+    <a class="header"  routerLink="/parent-data">Parent-data</a>
+    <a class="header"  routerLink="/pipes">Pipes</a>
+    <a class="header"  routerLink="/two-way-binding">Two-way-binding</a>
   </nav>
 </mat-toolbar>
-
-<h1>Hello World Angular!</h1>
 <router-outlet></router-outlet>
 <app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
 <p>footer</p>
