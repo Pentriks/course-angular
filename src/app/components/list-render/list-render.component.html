@@ -4,6 +4,7 @@
     <li *ngFor="let weapon of weapons">
       <strong>Name:</strong> {{ weapon.name }} <strong>Type:</strong> {{ weapon.type }}
       <button (click)="showCaliber(weapon)">Show caliber</button>
+      <button (click)="removeWeapons(weapon)">Delete</button>
     </li>
   </ul>
   <h3>{{ weaponDetails }}</h3>

@@ -1,4 +1,5 @@
-import { Component, Type } from '@angular/core';
+import { ListService } from './../../list.service';
+import { Component } from '@angular/core';
 import { Weapons } from 'src/app/Weapons.ts/Weapons.ts/Weapons.ts.module';
 
 @Component({
@@ -20,9 +21,18 @@ export class ListRenderComponent {
     caliber: 10,
   };
 
-  weaponDetails = ''
+  weaponDetails = '';
+
+  constructor(private listService: ListService) {}
+
+  ngOnInit(): void {}
 
   showCaliber(weapon: Weapons): void {
     this.weaponDetails = `The gun ${weapon.name} has a ${weapon.caliber} gauge!`
+  }
+
+  removeWeapons(weapon: Weapons) {
+    console.log('Removing weapon...');
+    this.weapons = this.listService.remove(this.weapons, weapon);
   }
 }
