@@ -1,15 +1,18 @@
-<p>header</p>
-<nav>
-  <a routerLink="/">Home</a>
-  <a routerLink="/list">List</a>
-  <a routerLink="/directives">Directives</a>
-  <a routerLink="/emitter">Emitter</a>
-  <a routerLink="/events">Events</a>
-  <a routerLink="/if-render">If-render</a>
-  <a routerLink="/parent-data">Parent-data</a>
-  <a routerLink="/pipes">Pipes</a>
-  <a routerLink="/two-way-binding">Two-way-binding</a>
-</nav>
+<mat-toolbar color="primary">
+  <span>My Application</span>
+  <nav class="class" >
+    <a class="class"  routerLink="/">Home</a>
+    <a class="class"  routerLink="/list">List</a>
+    <a class="class"  routerLink="/directives">Directives</a>
+    <a class="class"  routerLink="/emitter">Emitter</a>
+    <a class="class"  routerLink="/events">Events</a>
+    <a class="class"  routerLink="/if-render">If-render</a>
+    <a class="class"  routerLink="/parent-data">Parent-data</a>
+    <a class="class"  routerLink="/pipes">Pipes</a>
+    <a class="class"  routerLink="/two-way-binding">Two-way-binding</a>
+  </nav>
+</mat-toolbar>
+
 <h1>Hello World Angular!</h1>
 <router-outlet></router-outlet>
 <app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
