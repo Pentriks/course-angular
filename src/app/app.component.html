@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
   <span>My Application</span>
-  <nav>
+  <header>
     <a class="header"  routerLink="/">Home</a>
     <a class="header"  routerLink="/list">List</a>
     <a class="header"  routerLink="/directives">Directives</a>
@@ -10,8 +10,12 @@
     <a class="header"  routerLink="/parent-data">Parent-data</a>
     <a class="header"  routerLink="/pipes">Pipes</a>
     <a class="header"  routerLink="/two-way-binding">Two-way-binding</a>
-  </nav>
+  </header>
 </mat-toolbar>
+<mat-card>
+  <mat-card-content>
 <router-outlet></router-outlet>
 <app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
+</mat-card-content>
+</mat-card>
 <p>footer</p>
