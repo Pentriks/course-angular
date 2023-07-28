@@ -1,0 +1,9 @@
+{
+    "weapons": [
+        {"id": 1, "name": "Kalashnikov", "type": "Machine gun",   "caliber": 7 },
+        {"id": 2, "name": "Uzi",   "type": "Machine gun",   "caliber": 9 },
+        {"id": 3, "name": "M4", "type": "Machine gun",   "caliber": 6 },
+        {"id": 4, "name": "Ceska",   "type": "Machine gun", "caliber": 9 },
+        {"id": 5, "name": "Heckler",  "type": "Machine gun",  "caliber": 9 }
+    ]
+}

@@ -8,12 +8,7 @@ import { Weapons } from 'src/app/Weapons.ts/Weapons.ts/Weapons.ts.module';
   styleUrls: ['./list-render.component.scss']
 })
 export class ListRenderComponent {
-  weapons: Weapons[] = [
-    { name: 'Kalashnikov', type: 'Machine gun', caliber: 7 },
-    { name: 'Uzi', type: 'Machine gun', caliber: 9 },
-    { name: 'M4', type: 'Machine gun', caliber: 6 },
-    { name: 'Ceska', type: 'Machine gun', caliber: 9 },
-  ];
+  weapons: Weapons[] = [];
 
   weapon: Weapons = {
     name: 'Teste',
@@ -23,7 +18,9 @@ export class ListRenderComponent {
 
   weaponDetails = '';
 
-  constructor(private listService: ListService) {}
+  constructor(private listService: ListService) {
+    this.getWeapons()
+  }
 
   ngOnInit(): void {}
 
@@ -34,5 +31,9 @@ export class ListRenderComponent {
   removeWeapons(weapon: Weapons) {
     console.log('Removing weapon...');
     this.weapons = this.listService.remove(this.weapons, weapon);
+  }
+
+  getWeapons(): void {
+    this.listService.getAll().subscribe((weapons) => (this.weapons = weapons));
   }
 }
