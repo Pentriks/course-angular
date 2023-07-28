@@ -10,12 +10,6 @@ import { Weapons } from 'src/app/Weapons.ts/Weapons.ts/Weapons.ts.module';
 export class ListRenderComponent {
   weapons: Weapons[] = [];
 
-  weapon: Weapons = {
-    name: 'Teste',
-    type: 'Alguma coisa',
-    caliber: 10,
-  };
-
   weaponDetails = '';
 
   constructor(private listService: ListService) {

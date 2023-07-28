@@ -19,4 +19,8 @@ export class ListService {
   getAll(): Observable<Weapons[]> {
     return this.http.get<Weapons[]>(this.apiUrl)
   }
+
+  getItem(id: number): Observable<Weapons> {
+    return this.http.get<Weapons>(`${this.apiUrl}/${id}`);
+  }
 }

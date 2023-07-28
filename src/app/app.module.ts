@@ -18,6 +18,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { MatCardModule } from '@angular/material/card';
     ChangeNumberComponent,
     ListRenderComponent,
     PipesComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,

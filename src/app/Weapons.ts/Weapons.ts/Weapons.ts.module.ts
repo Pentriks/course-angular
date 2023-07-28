@@ -1,5 +1,6 @@
 export interface Weapons {
-  name:string
-  type:string
-  caliber: number
+  id: number;
+  name: string;
+  type: string;
+  caliber: number;
 }
