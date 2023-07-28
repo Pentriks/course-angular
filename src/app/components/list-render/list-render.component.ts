@@ -23,8 +23,8 @@ export class ListRenderComponent {
   }
 
   removeWeapons(weapon: Weapons) {
-    console.log('Removing weapon...');
-    this.weapons = this.listService.remove(this.weapons, weapon);
+    this.weapons = this.weapons.filter((a) => weapon.name !== a.name);
+    this.listService.remove(weapon.id).subscribe();
   }
 
   getWeapons(): void {
